@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>BookMedik - Control de expedientes médicos</title>
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+  <header>
+    <h1>BookMedik</h1>
+    
+  </header>
+  <main>
+    <section class="citas">
+      <h2>Citas</h2>
+      <div class="cont-btn-crear">
+        <button class="btn-crear">
+          Agregar cita
+        </button>
+      </div>
+      <div class="conteinet-paciente-form">
+      <h2>Agregar Nuevo Pasiente</h2>
+      <form id="paciente-form" class="paciente-form">
+        <input type="text" placeholder="Nombre" id="name">
+        <input type="text" placeholder="Apellido" id="lastname">
+        <input type="text" placeholder="Edad" id="age">
+        <input tyte="text" placeholder="Medicamento" id="medicamento">
+        <input type="date" placeholder="Fecha" id="date">
+        <input type="text" placeholder="Email" id="email">
+        <input type="text" placeholder="Telefono" id="phone">
+        <input type="text" placeholder="Direccion" id="address">
+        <input type="text" placeholder="Observaciones" id="observations">
+        <input type="text" placeholder="Enfermedad" id="disease">
+        <button type="submit" class="btn-agregar">Agregar</button>
+        <button type="submit" class="btn-actualizar">Actualizar</button>
+        <button type="submit" class="btn-cerrar-form">Cerrar</button>
+      </form>
+    </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Paciente</th>
+            <th>Medicamento</th>
+            <th>Fecha</th>
+            <th>Acción</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <footer>
+    <p>Copyright © 2023 BookMedik</p>
+  </footer>
+  <script src="/src/script.js" defer></script>
+  <input type="checkbox" id="btn-modal">
+ <div class="container-modal">
+  <div class="content-modal">
+    <h2>Bienvenido</h2>
+    <p>Por favor, ingrese sus datos para iniciar sesión</p>
+    <div class="btn-cerrar">
+      <label for="btn-modal" class="modalCerrar">Cerrar</label>
+    </div>
+    <div class="btn-imprimir">
+      <label  class="imprimirmodal">Imprimir</label>
+    </div>
+  </div>
+ </div>
+ <label for="btn-modal" class="cerrar-modal"></label>
+</body>
+</html>
+

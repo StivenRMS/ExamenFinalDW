@@ -1,0 +1,232 @@
+body {
+    font-family: sans-serif;
+    background-color: #fff;
+    color: #000;
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  header {
+    background-color: #000;
+    color: #fff;
+    padding:30px;
+  }
+  
+  h1 {
+    font-size: 3em;
+  }
+  
+  nav {
+    float: right;
+    background-color: #000;
+    padding: 20px;
+    margin: 0;
+    
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+  }
+  
+  nav a:hover {
+    background-color: #ccc;
+  }
+  
+  main {
+    margin-top: 20px;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th {
+    background-color: #ccc;
+    padding: 10px;
+  }
+  
+  table td {
+    padding: 10px;
+  }
+  
+  footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position:absolute; /* Cambiado a posición fija *//* Fijar en la parte inferior */
+    width: 100%; /* Abarcar todo el ancho de la pantalla */
+  }
+
+  #table-body {
+    left: 9%;
+    position: relative;
+  
+  }
+
+ /* Estilos para el modal */
+#btn-modal {
+  display: none;
+}
+
+.container-modal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(144, 148, 150, 0.8);
+  display: none;
+  justify-content: center; /* Cambiado de justify-self a justify-content */
+  align-items: center;
+  z-index: 100;
+}
+
+#btn-modal:checked ~ .container-modal {
+  display: flex;
+}
+/* Estilo para el botón "Agregar cita" */
+.cont-btn-crear {
+  text-align: center; /* Centrar el botón horizontalmente */
+  margin: 20px 0; /* Agregar margen superior e inferior al contenedor */
+}
+
+.btn-crear {
+  background-color: #4CAF50; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  padding: 10px 20px; /* Espaciado interno (arriba y abajo, izquierda y derecha) */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Borde redondeado */
+  cursor: pointer; /* Cambiar el cursor al pasar por encima */
+  transition: background-color 0.3s; /* Transición de color de fondo */
+}
+
+.btn-crear:hover {
+  background-color: #45a049; /* Cambiar color de fondo al pasar el mouse */
+}
+.content-modal {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.content-modal h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+.container-modal p {
+
+  text-align: center;
+  margin: 10px 0;
+}
+
+
+.container-modal .btn-cerrar {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container-modal .btn-cerrar label {
+  padding: 7px 10px;
+  background-color: #5488a3;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 300ms ease; /* Cambiado "all" por "background-color" */
+}
+
+.container-modal .btn-cerrar label:hover {
+  background-color: #3c6e8f;
+}
+
+.container-modal .btn-imprimir {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.container-modal .btn-imprimir label {
+  padding: 7px 10px;
+  background-color: #c98a63;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 300ms ease; /* Cambiado "all" por "background-color" */
+}
+
+.container-modal .btn-imprimir label:hover {
+  background-color: #9a582e;
+}
+
+
+
+.cerrar-modal {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Estilos para pantallas de ancho máximo de 800px */
+@media screen and (max-width: 800px) {
+  .content-modal {
+    width: 90%;
+  }
+}
+
+
+
+/* Nuevo paciente form*/
+.paciente-form {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 0 auto; /* Centra horizontalmente el formulario */
+  width: 300px; /* Ajusta el ancho a tu preferencia */
+}
+
+.paciente-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+.paciente-form button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.conteinet-paciente-form {
+  display: none;
+}
+.btn-actualizar{
+  display: none;
+}
+.td-button button{
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  
+}
